@@ -131,13 +131,19 @@ Arbre de fitxers i carpetes principals:
 ```
 MeteoSapa
 ├── /BBDD
-│   └── Script SQL
+│   └── aletoriedades.py
+│   └── scripts.sql
 ├── /styles
-│   └── Fitxers CSS
+│   └── styles.css
 ├── /imatges
-│   └── Imatges del projecte
+│   └── fondo7.jpg
+│   └── logo.png
 ├── /login               
-│   └── Secció de login (fitxers relacionats)
+│   └── login.php
+│   └── login_processar.php
+│   └── logout.php
+│   └── registre.php
+│   └── registre_processar.php
 ├── index.php
 ├── header.php
 ├── footer.php
@@ -150,9 +156,7 @@ MeteoSapa
 ├── preferits_eliminar.php
 ├── pressio.php
 ├── temperatura.php
-├── vent.php
-└──aleatoridades.py
-   └── Script Python per generar dades aleatories de prova
+└──vent.php
 ```
 
 ---
