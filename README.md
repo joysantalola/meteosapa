@@ -1,133 +1,128 @@
-```markdown
 # 🌦️ Projecte Web Meteorològica
 
-Aquest projecte és un sistema web per a la visualització de dades meteorològiques, utilitzant PHP i MySQL. Les dades meteorològiques (temperatura, humitat, pressió, velocitat del vent, precipitació, etc.) es guarden a la base de dades i es poden consultar a través de la web.
+Aquest projecte és un sistema web per a la visualització de dades meteorològiques, desenvolupat amb PHP i MySQL. Les dades meteorològiques inclouen temperatura, humitat, pressió, velocitat del vent i precipitació. També s'ha inclòs un script en Python per generar dades de prova.
 
 ---
 
 ## 👥 Membres del projecte
 
-- **Oleguer Esteo**
-- **David Gutierrez**
-- **Sergi Gallart**
+- Oleguer Esteo  
+- David Gutierrez  
+- Sergi Gallart
 
 ---
 
-## 🧰 Tecnologia utilitzada
+## 🧰 Tecnologies utilitzades
 
-- PHP
-- MySQL
-- HTML / CSS
-- Python (per a generar dades de prova)
-- Faker (llibreria de Python)
-- **XAMPP** (Apache + MySQL + PHP)
+- PHP  
+- MySQL  
+- HTML / CSS  
+- Python (per a generar dades de prova)  
+- Faker (llibreria de Python)  
+- XAMPP (Apache + MySQL + PHP)
+
+---
+
+## ⚙️ Requisits previs
+
+- XAMPP (o un entorn equivalent amb Apache, PHP i MySQL)  
+- Python 3 (per executar l'script de generació de dades)  
+- pip (gestor de paquets Python)
 
 ---
 
 ## ⚙️ Instruccions per posar en marxa el projecte
 
-Per fer funcionar el projecte, cal seguir els següents passos:
+1. Instal·la XAMPP i inicia els serveis:
+   - Apache → Start  
+   - MySQL → Start
 
-### 1️⃣ Instal·lar XAMPP
-Utilitzarem **XAMPP** com a entorn de servidor. XAMPP inclou:
-
-- Apache (servidor web)
-- MySQL (base de dades)
-- PHP
-
-Després d'instal·lar XAMPP, cal iniciar:
-
-- Apache → **Start**
-- MySQL → **Start**
-
----
-
-### 2️⃣ Crear la base de dades
-
-Els scripts per crear la base de dades i les taules es poden trobar al fitxer:
-
-```
-
-BBDD/script.sql
-
-````
-
-📌 **Important:**  
-- No es detallen les taules aquí.
-- Tots els comandos per crear les taules i inserir les dades estan al fitxer `script.sql`.
-
-Per executar aquest script, pots utilitzar **phpMyAdmin** o la consola de MySQL.
+2. Importa la base de dades:
+   - Els scripts per crear la base de dades i les taules es troben a:
+     ```
+     BBDD/script.sql
+     ```
+   - Pots executar aquest script amb phpMyAdmin o la consola de MySQL:
+     - phpMyAdmin: accedeix a `http://ip_servidor/phpmyadmin` i importa `BBDD/script.sql`.
+     - Consola MySQL:
+       ```bash
+       mysql -u usuari -p nom_base_de_dades < BBDD/script.sql
+       ```
 
 ---
 
 ## 🧪 Generació de dades de prova (Python + Faker)
 
-Per provar el funcionament del projecte, s'ha desenvolupat un script en **Python** que genera dades de manera automàtica.
+S'ha creat un script en Python (`aleatoridades.py`) per generar dades de prova automàticament.
 
-### Característiques de les dades generades:
-- Utilitza la llibreria **Faker**
-- Genera dades per als anys 2022 a 2025
-- Per cada dia es generaran **dues dades diàries** per a cada variable meteorològica (temperatura, humitat, pressió, vent i precipitació)
+Característiques:
+- Utilitza la llibreria `Faker`.
+- Genera dades per als anys 2022 a 2025.
+- Per cada dia es generen dues entrades diàries per a cada variable meteorològica (temperatura, humitat, pressió, vent i precipitació).
 
----
+### Executar l'script de generació de dades
 
-## 🐍 Entorn virtual Python (venv)
+És recomanable utilitzar un entorn virtual Python:
 
-Per executar el script de generació de dades, s'ha creat un **entorn virtual Python** per gestionar les dependències del projecte.
+1. Crear l'entorn virtual:
+   ```bash
+   python3 -m venv venv
+   ```
 
-Passos per configurar l'entorn:
+2. Activar l'entorn virtual:
+   - Linux / macOS:
+     ```bash
+     source venv/bin/activate
+     ```
+   - Windows (PowerShell):
+     ```powershell
+     .\venv\Scripts\Activate.ps1
+     ```
 
-1️⃣ Crear l'entorn virtual:
+3. Instal·lar dependències:
+   ```bash
+   pip install faker
+   ```
 
-```bash
-python3 -m venv venv
-````
+4. Executar l'script:
+   ```bash
+   python aleatoridades.py
+   ```
 
-2️⃣ Activar l'entorn virtual:
-
-```bash
-source venv/bin/activate
-```
-
-3️⃣ Instal·lar la llibreria Faker:
-
-```bash
-pip install faker
-```
-
-4️⃣ Executar l'script de generació de dades:
-
-```bash
-python aleatoridades.py
-```
-
-5️⃣ Desactivar l'entorn virtual un cop acabat:
-
-```bash
-deactivate
-```
+5. Desactivar l'entorn virtual:
+   ```bash
+   deactivate
+   ```
 
 ---
 
 ## 🌐 Accés al projecte
 
-Un cop el projecte estigui en marxa, es pot accedir als serveis a través dels següents enllaços:
+Un cop el projecte està en funcionament, es pot accedir a:
 
-* **Web del projecte:**
-  `http://ip_servidor/Projecte/index.php`
+- Web del projecte:
+  ```
+  http://ip_servidor/Projecte/index.php
+  ```
 
-* **phpMyAdmin:**
-  `http://ip_servidor/phpmyadmin`
+- phpMyAdmin:
+  ```
+  http://ip_servidor/phpmyadmin
+  ```
+
+(Substitueix `ip_servidor` per l'adreça IP o `localhost` segons el teu entorn.)
 
 ---
 
 ## 📁 Estructura del projecte (resum)
 
+Arbre de fitxers i carpetes principals:
+
 ```
-/BBDD          -> Scripts SQL
-/estils        -> Fitxers CSS
-/imatges       -> Imatges
-/login         -> Secció de login
+/BBDD                -> Scripts SQL (ex. script.sql)
+/estils              -> Fitxers CSS
+/imatges             -> Imatges del projecte
+/login               -> Secció de login (fitxers relacionats)
 index.php
 header.php
 footer.php
@@ -141,9 +136,21 @@ preferits_eliminar.php
 pressio.php
 temperatura.php
 vent.php
+aleatoridades.py     -> Script Python per generar dades de prova
 ```
 
-```
+---
 
-Aquest és el README actualitzat per la nova estructura de fitxers. Ara fa referència correctament a les carpetes i fitxers que es veuen a la imatge que has penjat. Si necessites més modificacions, només cal que m'ho diguis!
-```
+## 📝 Notes i recomanacions
+
+- Revisar `connexio.php` per configurar usuari, contrasenya i nom de la base de dades abans d'executar l'aplicació.
+- Assegura't que les rutes a imatges i fulls d'estil (`/estils`, `/imatges`) siguin accessibles des del servidor Apache.
+- Si vols que importi les dades de prova directament a la base de dades o que faci el commit del README actualitzat, puc ajudar a fer-ho.
+
+---
+
+## 📬 Contacte
+
+Per dubtes o col·laboracions, contactar amb els membres del projecte indicats a la secció "Membres del projecte".
+
+---
