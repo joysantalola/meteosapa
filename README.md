@@ -6,8 +6,8 @@ Aquest projecte és un sistema web per a la visualització de dades meteorològi
 
 ## 👥 Membres del projecte
 
-- Oleguer Esteo  
-- David Gutierrez  
+- [Oleguer Esteo](https://olegueresteo.es/)  
+- [David Gutierrez](https://davidgutierrez.es/)  
 - Sergi Gallart
 
 ---
@@ -145,11 +145,13 @@ aleatoridades.py     -> Script Python per generar dades de prova
 
 - Revisar `connexio.php` per configurar usuari, contrasenya i nom de la base de dades abans d'executar l'aplicació.
 - Assegura't que les rutes a imatges i fulls d'estil (`/estils`, `/imatges`) siguin accessibles des del servidor Apache.
-- Si vols que importi les dades de prova directament a la base de dades o que faci el commit del README actualitzat, puc ajudar a fer-ho.
 
 ---
 
 ## 📬 Contacte
+
+- LinkedIn: [Oleguer Esteo](https://www.linkedin.com/in/oleguer-esteo-mart%C3%ADnez/)  
+- Web: [https://olegueresteo.es/](https://olegueresteo.es/)
 
 Per dubtes o col·laboracions, contactar amb els membres del projecte indicats a la secció "Membres del projecte".
 
