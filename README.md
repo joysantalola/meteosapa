@@ -119,24 +119,30 @@ Un cop el projecte està en funcionament, es pot accedir a:
 Arbre de fitxers i carpetes principals:
 
 ```
-/BBDD                -> Scripts SQL (ex. script.sql)
-/estils              -> Fitxers CSS
-/imatges             -> Imatges del projecte
-/login               -> Secció de login (fitxers relacionats)
-index.php
-header.php
-footer.php
-connexio.php
-contacte.php
-humitat.php
-precipitacio.php
-preferits.php
-preferits_afegir.php
-preferits_eliminar.php
-pressio.php
-temperatura.php
-vent.php
-aleatoridades.py     -> Script Python per generar dades de prova
+MeteoSapa
+├── /BBDD
+│   └── Script SQL
+├── /styles
+│   └── Fitxers CSS
+├── /imatges
+│   └── Imatges del projecte
+├── /login               
+│   └── Secció de login (fitxers relacionats)
+├── index.php
+├── header.php
+├── footer.php
+├── connexio.php
+├── contacte.php
+├── humitat.php
+├── precipitacio.php
+├── preferits.php
+├── preferits_afegir.php
+├── preferits_eliminar.php
+├── pressio.php
+├── temperatura.php
+├── vent.php
+└──aleatoridades.py
+   └── Script Python per generar dades aleatories de prova
 ```
 
 ---
