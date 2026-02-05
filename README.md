@@ -1,10 +1,10 @@
-# 🌦️ Projecte Web Meteorològica
+# Projecte Web Meteorològica
 
 Aquest projecte és un sistema web per a la visualització de dades meteorològiques, desenvolupat amb PHP i MySQL. Les dades meteorològiques inclouen temperatura, humitat, pressió, velocitat del vent i precipitació. També s'ha inclòs un script en Python per generar dades de prova.
 
 ---
 
-## ▶️ Demostració
+##Demostració
 
 Pots visualitzar el vídeo de demostració inclòs al repositori:
 
@@ -22,7 +22,7 @@ Pots visualitzar el vídeo de demostració inclòs al repositori:
 
 ---
 
-## 🧰 Tecnologies utilitzades
+## Tecnologies utilitzades
 
 - PHP  
 - MySQL  
@@ -33,7 +33,7 @@ Pots visualitzar el vídeo de demostració inclòs al repositori:
 
 ---
 
-## ⚙️ Requisits previs
+## Requisits previs
 
 - XAMPP (o un entorn equivalent amb Apache, PHP i MySQL)  
 - Python 3 (per executar l'script de generació de dades)  
@@ -41,7 +41,7 @@ Pots visualitzar el vídeo de demostració inclòs al repositori:
 
 ---
 
-## ⚙️ Instruccions per posar en marxa el projecte
+## Instruccions per posar en marxa el projecte
 
 1. Instal·la XAMPP i inicia els serveis:
    - Apache → Start  
@@ -61,7 +61,7 @@ Pots visualitzar el vídeo de demostració inclòs al repositori:
 
 ---
 
-## 🧪 Generació de dades de prova (Python + Faker)
+## Generació de dades de prova (Python + Faker)
 
 S'ha creat un script en Python (`aleatoridades.py`) per generar dades de prova automàticament.
 
@@ -106,7 +106,7 @@ Característiques:
 
 ---
 
-## 🌐 Accés al projecte
+## Accés al projecte
 
 Un cop el projecte està en funcionament, es pot accedir a:
 
@@ -161,14 +161,14 @@ MeteoSapa
 
 ---
 
-## 📝 Notes i recomanacions
+## Notes i recomanacions
 
 - Revisar `connexio.php` per configurar usuari, contrasenya i nom de la base de dades abans d'executar l'aplicació.
 - Assegura't que les rutes a imatges i fulls d'estil (`/estils`, `/imatges`) siguin accessibles des del servidor Apache.
 
 ---
 
-## 📬 Contacte
+## Contacte
 
 - LinkedIn(Oleguer) : [Oleguer Esteo](https://www.linkedin.com/in/oleguer-esteo-mart%C3%ADnez/)  
 
