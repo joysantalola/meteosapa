@@ -4,6 +4,16 @@ Aquest projecte és un sistema web per a la visualització de dades meteorològi
 
 ---
 
+## ▶️ Demostració
+
+Pots visualitzar el vídeo de demostració inclòs al repositori:
+
+[Veure la demostració (Demostració_Projecte.mp4)](Demostració_Projecte.mp4)
+
+> Si el reproductor inline no funciona al README, fes clic al enllaç per descarregar/visualitzar el fitxer directament.
+
+---
+
 ## 👥 Membres del projecte
 
 - [Oleguer Esteo](https://olegueresteo.es/)  
