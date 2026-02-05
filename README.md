@@ -150,8 +150,7 @@ aleatoridades.py     -> Script Python per generar dades de prova
 
 ## 📬 Contacte
 
-- LinkedIn: [Oleguer Esteo](https://www.linkedin.com/in/oleguer-esteo-mart%C3%ADnez/)  
-- Web: [https://olegueresteo.es/](https://olegueresteo.es/)
+- LinkedIn(Oleguer) : [Oleguer Esteo](https://www.linkedin.com/in/oleguer-esteo-mart%C3%ADnez/)  
 
 Per dubtes o col·laboracions, contactar amb els membres del projecte indicats a la secció "Membres del projecte".
 
